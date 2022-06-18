@@ -24,7 +24,7 @@ You will get something like:
 
 ## How to Use
 
-Compile your multiboot kernel with **-gl** flag to add debug symbols. Then, run qemu by using the **-kernel YourKernel** option and add **-qmp unix:./qmp-sock,server,nowait** to redirect qmp to a socket. To lauch qprofile, execute:
+Compile your multiboot kernel with **-gl** flag to add debug symbols. Then, run qemu by using the **-kernel YourKernel** option and add **-qmp unix:./qmp-sock,server,nowait** to redirect qmp to a socket. To launch qprofile, execute:
 
 `./qprofiler --path=./qmp-sock --duration=10 --frecuency=0.05 --filename=YouKernel`
 
@@ -45,3 +45,4 @@ For the moment, Qprofiler only samples the booting core.
 ## License
 
 GPLv2
+
